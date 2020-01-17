@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Productos</h1>
+    <div class="cont" *ngFor="let item of datos; let i = index">
+        <!--<div>{{i + 1}}</div>-->
+        <div class="ci">
+            <img src="http://127.0.0.1:8000/img/productos/{{item.imagen}}" class="pi" alt="...">
+        </div>
+        <div class="cc">
+            <h5>{{item.nombre}}</h5>
+        </div>
+        <div class="cb">
+            <button type="button" class="btn btn-primary">Ver categoria</button>
+        </div>
+    </div>
+</div>

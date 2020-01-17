@@ -1,0 +1,17 @@
+<div class="contenedor">
+    <h4>Categorias</h4>
+    <div class="cont" *ngFor="let item of datos; let i = index">
+        <div [routerLink]="['ProductosCategorias',item.id]">
+            <!--<div>{{i + 1}}</div>-->
+            <div class="ci">
+                <img src="http://127.0.0.1:8000/img/categorias/{{item.imagen}}" class="pi" alt="...">
+            </div>
+            <div class="cc">
+                <h6>{{item.nombre}}</h6>
+            </div>
+            <!--<div class="cb">
+                <button class="btn btn-link">Ver categoria</button>
+            </div>-->
+        </div>
+    </div>
+</div>
