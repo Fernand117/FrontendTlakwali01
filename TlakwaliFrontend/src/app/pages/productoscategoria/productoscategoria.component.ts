@@ -19,9 +19,9 @@ export class ProductoscategoriaComponent implements OnInit {
 
   ngOnInit() {
       this.sub = this.route.params.subscribe(params => {
-        this.id = + params['id'];
+        let ide = +params['id'];
         if (this.id != null) {
-          this.categoriasService.ListarProductosCategorias(Number(this.id)).subscribe(
+          this.categoriasService.ListarProductosCategorias(Number(ide)).subscribe(
             res => {
               this.datos = res['productos'];
             }

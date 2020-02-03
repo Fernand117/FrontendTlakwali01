@@ -1,1 +1,13 @@
-<p>inicio works!</p>
+<div class="container">
+    <div class="cont" *ngFor="let item of datos; let i = index">
+        <!--<div>{{i + 1}}</div>-->
+        <div class="ci">
+            <img src="http://127.0.0.1:8000/img/productos/{{item.imagen}}" class="pi" alt="...">
+        </div>
+        <div class="cc">
+            <h6>{{item.nombre}}</h6>
+            <p> {{item.descipcion}} </p>
+            <p> $ {{item.precio}} MXN </p>
+        </div>
+    </div>
+</div>
